@@ -27,8 +27,8 @@ const ProjectsPage: React.FC = () => {
     try {
       const { data } = await axios.get<ApiResponse<Project[]>>("/api/projects");
 
-      if (data?.success && Array.isArray(data.data)) {
-        setProjects(data.data);
+      if (data && Array.isArray(data)) {
+        setProjects(data);
       }
     } catch (error: unknown) {
       if (axios.isAxiosError(error)) {
