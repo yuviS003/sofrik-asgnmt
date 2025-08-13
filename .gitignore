@@ -1,0 +1,52 @@
+# =============================
+# Global
+# =============================
+# Dependency folders
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# Logs
+logs
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# IDE configs
+.vscode/
+.idea/
+*.swp
+
+# TypeScript build info
+**/*.tsbuildinfo
+
+# =============================
+# Frontend (Next.js + TS)
+# =============================
+frontend/.next/
+frontend/out/
+frontend/.cache/
+
+# =============================
+# Backend (Node + Express)
+# =============================
+backend/dist/
+backend/build/
+backend/.cache/
+backend/coverage/
